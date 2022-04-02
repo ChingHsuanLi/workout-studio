@@ -1,0 +1,125 @@
+body{
+    overflow: hidden;
+}
+body #bgImg{
+    background-image: url("image/indexBG.png");
+}
+
+nav img{
+    height: 70px;
+    margin-top: 5px;
+}
+
+body .navbar{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */    
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #34ACCC;
+    width: 100%;
+    height: 80px;
+}
+li{
+    font-size: 22px;
+}
+
+#logoIcon{
+    margin-top: -7px;  
+} 
+
+#openLoginButton{
+    margin-top: -10px;
+}
+
+li a{
+    color: #4B4D4E;
+}
+
+li a:hover{
+    color: #072E48;
+    text-decoration: none;
+}
+
+/* 這裏是登入按鈕 */
+
+.modal-content .modal-header{
+    background-color: #F2D37F;
+}
+
+.modal-content h4{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-content .form-group{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-footer{
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.modal-footer p{
+    padding: 0px;
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B4D4E
+}
+/* 這裏是內容 */
+
+#indexIMG img{
+    margin-left: 0px;
+    padding: 0px;
+    height: 800px;
+}
+
+#leftbar{
+    padding: 0px;
+    margin: 0px;
+}
+
+#leftbar h2{
+    height: 250px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 200px 50px 0px 100px;
+    color: #0e3149;
+    /* border: 1px solid black; */
+}
+
+p{
+    height: 250px;
+    width: 700px;
+    /* border: 1px solid black; */
+    padding: 40px 10px 50px 150px;
+    font-size: 22px;
+    font-family: Georgia, Arial, sans-serif;
+    color: #4B4D4E;
+}
+
+#knowMorebtn{
+    margin-left: 650px;
+    background-color: #BBDEFB;
+    padding: 15px;
+    border-radius: 20px;
+    color: #4B4D4E;
+    font-weight: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+   
+}
+#knowMorebtn:hover{
+    background-color: #125B90;
+    color: #F2D37F;
+}
+
+
+
+

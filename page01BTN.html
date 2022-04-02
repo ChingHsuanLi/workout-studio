@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout</title>
+    <link href="btn.css" rel="stylesheet">
+    <link rel="stylesheet" href="setup/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="setup/jquery.min.js"></script>
+    <script src="setup/popper.min.js"></script>    
+    <script src="setup/bootstrap.min.js" ></script>
+    
+</head>
+<body>
+
+<div>
+    <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+        預約 <i class="far fa-calendar-check"></i>
+    </button>
+</div>
+  
+  <!--book Modal -->
+  <div class="modal fade" id="bookModal" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" id="bookModal_header">
+          <h3 class="modal-title">選擇課程</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" float-right>
+            &times;</button>
+        </div>
+
+        <div class="modal-body mx-auto " id="bookModal_body">
+            <button type="button" class="timebtn01 btn"  data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Vivian 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Bella 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Cindy 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"></a>
+                12/03 12:00~13:30  Marie 老師</button><br>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+<!-- detail modal -->
+  <div class="modal fade" id="confirmModal01" data-backdrop="static">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header" id="confirmModal01_header">
+          <h3 class="modal-title">選擇課程</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            &times;</button>
+        </div>
+
+        <div class="modal-body" id="confirmModal01_body">
+            <div id="confirmInfo">
+                <h4>12/03 12:00~13:30  Vivian 老師</h4>
+                <div class="row">
+                    <p class="col-6">    拿破崙說過一句著名的話，勇氣如愛情，需要希望來滋養。這段話讓我所有的疑惑頓時豁然開朗。現在，正視有氧瑜珈的問題，是非常非常重要的。因為，陳獨秀曾說過一句意義深遠的話，未嘗無益於人群。希望各位能用心體會這段話。</p>
+                    <img src="image/portrait01.jpg" class="col-6 img-fluid">    
+                </div>
+            </div>
+
+            <div class="modal-footer" id="confirmModal01_footer">
+
+                <button type="button" 
+                        id="prevbtn" 
+                        class="btn btn-outline-warning">
+                        <i class="fas fa-chevron-circle-left"></i> 上一頁
+                    </button>
+
+                    <button type="button" 
+                            id="checkButon" 
+                            data-dismiss="modal"
+                            class="btn btn-outline-warning">
+                            <i class="fas fa-check"></i> 確認預約
+                    </button> 
+
+            </div>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+
+    $(".bookbtn").click(function () {
+      $("#bookModal").modal({backdrop: "static"});
+    })
+
+    $(".timebtn01").click(function () {
+      $("#confirmModal01").modal({backdrop: "static"});
+    })
+    
+    $("#prevbtn").click(function () {
+          $("#confirmModal01").modal("hide");
+        })
+  
+    
+  
+  </script>
+</body>
+</html>

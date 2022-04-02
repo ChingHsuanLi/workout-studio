@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="setup/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="setup/jquery.min.js"></script>
+    <script src="setup/popper.min.js"></script>    
+    <script src="setup/bootstrap.min.js" ></script>
+    
+</head>
+<body>
+    <div id="bgImg">
+        
+        <nav>
+            <ul class="navbar row shadow">
+                <li class="col-7" id="logoIcon"><a href="index.html"><img src="image/workoutLogo01.png"></a></li>
+                <li id="home" class="col-1"><a href="index.html">Home</a></li>
+                <li id="tutorial" class="col-1"><a href="page02.html">Tutorial</a></li>
+                <li id="about" class="col-1"><a href="page03.html">About</a></li>
+                <li id="location" class="col-1"><a href="page04.html">Location</a></li>
+                <li class=" col-1">
+                    <button type="button" 
+                        id="openLoginButton"
+                        class="btn btn-outline-dark" >
+                        登入<i class="fas fa-users"></i>
+                    </button>
+                   
+                </li>
+            </ul>
+        </nav>
+        <!-- 這裏是modal -->
+        <div class="container">
+            <div class="modal fade " id="loginModal">
+              <div class="modal-dialog ">
+                <div class="modal-content">
+                
+                  <div class="modal-header shadow">
+                    <h4 class="modal-title">登入</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <div class="modal-body">
+        
+                    <div class="form-group">
+                      <label for="userNameTextBox">
+                          <i class="fa fa-user"></i> 帳號:
+                      </label>
+                      <input type="text" 
+                          class="form-control form-control-md"
+                          id="userNameTextBox" 
+                          placeholder="輸入帳號或E-mail" />
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="userNameTextBox">
+                            <i class="fa fa-lock"></i> 密碼:
+                        </label>
+                        <input type="password" 
+                            class="form-control"
+                            id="passwordTextBox" 
+                            placeholder="請在此輸入密碼" />
+                    </div>
+                
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> 記住我(下次自動登入)
+                        </label>
+                    </div>
+                
+                    <div class="float-right">
+                        <button type="button" 
+                                id="loginButton" 
+                                class="btn btn-outline-success">
+                                <i class="fa fa-check"></i> 登入
+                        </button>
+                        <button type="button" 
+                                id="cancelButton" 
+                                data-dismiss="modal"
+                                class="btn btn-outline-secondary">
+                                <i class="fa fa-remove"></i> 取消
+                        </button> 
+                    </div>          
+                    
+                  </div>
+                  
+                  <div class="modal-footer">
+                    <p>
+                        還不是會員嗎? <a href="#">加入我們</a> | 
+                        <a href="#">忘記密碼?</a>
+                    </p> 
+                    
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+        
+        
+        
+        </div>
+        
+
+
+
+
+
+        <div id="content" class="row">
+            <div id="leftbar" class="col-8">
+                <h2> 若沒有運動 對人類的改變可想而知</h2>
+                <p> 這種事意義重大，相信對這個世界也是有一定意義的。運動的出現，重寫了人生的意義。話雖如此，我們卻也不能夠這麼篤定。運動似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。對於一般人來說，運動究竟象徵著什麼呢？</p>
+                <a href="page02.html" id="knowMorebtn" class="shadow-sm">了解更多 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-4" id="indexIMG" >
+                <img src="image/indexIMG.jpg" class="img-fluid">
+            </div>
+        </div>
+         
+       
+        
+    </div>
+
+    <script>
+
+        $("#openLoginButton").click(function () {
+          $("#loginModal").modal({backdrop: "static"});
+        })
+      
+        $("#loginButton").click(function () {
+          $("#loginModal").modal("hide");
+        })
+      
+      </script>
+</body>
+</html>

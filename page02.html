@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page02.css">
+    <link rel="stylesheet" href="setup/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="setup/jquery.min.js"></script>
+    <script src="setup/popper.min.js"></script>    
+    <script src="setup/bootstrap.min.js" ></script>
+    
+</head>
+<body>
+    <!-- 這裡是navbar -->
+    <nav>
+        <ul class="navbar row shadow">
+            <li class="col-7" id="logoIcon"><a href="index.html"><img src="image/workoutLogo01.pdf"></a></li>
+            <li id="home" class="col-1"><a href="index.html">Home</a></li>
+            <li id="tutorial" class="col-1"><a href="page02.html">Tutorial</a></li>
+            <li id="about" class="col-1"><a href="page03.html">About</a></li>
+            <li id="location" class="col-1"><a href="page04.html">Location</a></li>
+            <li class=" col-1">
+                <button type="button" 
+                    id="openLoginButton"
+                    class="btn btn-outline-dark" >
+                    登入<i class="fas fa-users"></i>
+                </button>
+               
+            </li>
+        </ul>
+    </nav>
+    <!-- 這裏是登入modal -->
+    <div class="container">
+        <div class="modal fade " id="loginModal">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+            
+              <div class="modal-header shadow">
+                <h4 class="modal-title">登入</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <div class="modal-body">
+    
+                <div class="form-group">
+                  <label for="userNameTextBox">
+                      <i class="fa fa-user"></i> 帳號:
+                  </label>
+                  <input type="text" 
+                      class="form-control form-control-md"
+                      id="userNameTextBox" 
+                      placeholder="輸入帳號或E-mail" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="userNameTextBox">
+                        <i class="fa fa-lock"></i> 密碼:
+                    </label>
+                    <input type="password" 
+                        class="form-control"
+                        id="passwordTextBox" 
+                        placeholder="請在此輸入密碼" />
+                </div>
+            
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> 記住我(下次自動登入)
+                    </label>
+                </div>
+            
+                <div class="float-right">
+                    <button type="button" 
+                            id="loginButton" 
+                            class="btn btn-outline-success">
+                            <i class="fa fa-check"></i> 登入
+                    </button>
+                    <button type="button" 
+                            id="cancelButton" 
+                            data-dismiss="modal"
+                            class="btn btn-outline-secondary">
+                            <i class="fa fa-remove"></i> 取消
+                    </button> 
+                </div>          
+                
+              </div>
+              
+              <div class="modal-footer">
+                <p>
+                    還不是會員嗎? <a href="#">加入我們</a> | 
+                    <a href="#">忘記密碼?</a>
+                </p> 
+                
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+    
+    
+    </div>
+
+
+
+    <!-- 這裡是carousel，裡面有card -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="row" id="cardContainer">
+                <div class="card col-3" id="card01">
+                        <img src="image/cradIMG01.png" class="img-fluid crad-image-top" id="cardIMG"/>
+                    <div id="cardBody">
+                        <h2>
+                            有氧瑜珈
+                        </h2>
+                        <p>
+                            上課時間：上課時間：10:00 ~ 11:30
+                        </p>
+                    </div>
+                    <div id="cardFoot">
+                        <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                            預約 <i class="far fa-calendar-check"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-3" id="card02">
+                    <img src="image/cardIMG02.png" class="img-fluid" id="cardIMG">
+                    <div id="cardBody">
+                        <h2>
+                            燃脂運動
+                        </h2>
+                        <p>
+                            上課時間：上課時間：10:00 ~ 11:30
+                        </p>
+                    </div>
+                    <div id="cardFoot">
+                        <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                            預約 <i class="far fa-calendar-check"></i>
+                        </button>
+                    </div>
+                </div> 
+                <div class="card col-3" id="card03">
+                        <img src="image/cardIMG03.png" class="img-fluid" id="cardIMG">
+                    <div id="cardBody">
+                        <h2>
+                            親子同樂
+                        </h2>
+                        <p>
+                            上課時間：上課時間：10:00 ~ 11:30
+                        </p>
+                    </div>
+                    <div id="cardFoot">
+                        <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                            預約 <i class="far fa-calendar-check"></i>
+                        </button>
+                    </div>
+                </div><!-- card03的div -->
+            </div><!-- card container的div -->
+            </div><!-- carousel item的div -->
+            <div class="carousel-item">
+                <div class="row" id="cardContainer">
+                    <div class="card col-3" id="card01">
+                            <img src="image/cardIMG04.png" class="img-fluid crad-image-top" id="cardIMG"/>
+                        <div id="cardBody">
+                            <h2>
+                                個人塑形
+                            </h2>
+                            <p>
+                                上課時間：上課時間：10:00 ~ 11:30
+                            </p>
+                        </div>
+                        <div id="cardFoot">
+                            <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                預約 <i class="far fa-calendar-check"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card col-3" id="card02">
+                        <img src="image/cardIMG05.png" class="img-fluid" id="cardIMG">
+                        <div id="cardBody">
+                            <h2>
+                                冥想訓練
+                            </h2>
+                            <p>
+                                上課時間：上課時間：10:00 ~ 11:30
+                            </p>
+                        </div>
+                        <div id="cardFoot">
+                            <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                預約 <i class="far fa-calendar-check"></i>
+                            </button>
+                        </div>
+                    </div>  
+                    <div class="card col-3" id="card03">
+                        <img src="image/cradIMG06.png" class="img-fluid" id="cardIMG">
+                        <div id="cardBody">
+                            <h2>
+                                網球培訓
+                            </h2>
+                            <p>
+                                上課時間：上課時間：10:00 ~ 11:30
+                            </p>
+                        </div>
+                        <div id="cardFoot">
+                            <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                預約 <i class="far fa-calendar-check"></i>
+                            </button>
+                        </div>
+                    </div><!-- card03的div -->
+                </div><!-- card container的div -->
+            </div><!-- corousel item的div -->
+                <div class="carousel-item">
+                    <div class="row" id="cardContainer">
+                        <div class="card col-3" id="card01">
+                                <img src="image/cardIMG07.png" class="img-fluid crad-image-top" id="cardIMG"/>
+                            <div id="cardBody">
+                                <h2>
+                                    舞力四射
+                                </h2>
+                                <p>
+                                    上課時間：上課時間：10:00 ~ 11:30
+                                </p>
+                            </div>
+                            <div id="cardFoot">
+                                <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                    預約 <i class="far fa-calendar-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card col-3" id="card02">
+                                <img src="image/cardIMG08.png" class="img-fluid" id="cardIMG">
+                            <div id="cardBody">
+                                <h2>
+                                    籃球同樂
+                                </h2>
+                                <p>
+                                    上課時間：上課時間：10:00 ~ 11:30
+                                </p>
+                            </div>
+                            <div id="cardFoot">
+                                <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                    預約 <i class="far fa-calendar-check"></i>
+                                </button>
+                            </div>
+                        </div> 
+                        <div class="card col-3" id="card03">
+                                <img src="image/cardIMG09.png" class="img-fluid" id="cardIMG">
+                            <div id="cardBody">
+                                <h2>
+                                    足球培訓
+                                </h2>
+                                <p>
+                                    上課時間：上課時間：10:00 ~ 11:30
+                                </p>
+                            </div>
+                            <div id="cardFoot">
+                                <button class="bookbtn btn btn-sm btn-outline-light" data-target="#bookModal">
+                                    預約 <i class="far fa-calendar-check"></i>
+                                </button>
+                            </div>
+                        </div><!-- card3的div -->
+                    </div> <!-- card container的div -->
+                </div><!-- carousel item的div -->
+        </div>
+        <div id=myarrow>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" data-slide="prev">
+                <div id="iconBG">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" data-slide="next">
+                <div id="iconBG">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 這裏carousel結束 -->
+
+    <!-- 這裏是預約modal -->
+      <!--book Modal -->
+  <div class="modal fade" id="bookModal" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" id="bookModal_header">
+          <h3 class="modal-title">選擇課程</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" float-right>
+            &times;</button>
+        </div>
+
+        <div class="modal-body mx-auto " id="bookModal_body">
+            <button type="button" class="timebtn01 btn"  data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Vivian 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Bella 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"><a href="#"></a>
+                12/03 12:00~13:30  Cindy 老師</button><br>
+
+            <button type="button" class="timebtn01 btn" data-target="#confirmModal01"></a>
+                12/03 12:00~13:30  Marie 老師</button><br>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+<!-- detail modal -->
+  <div class="modal fade" id="confirmModal01" data-backdrop="static">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header" id="confirmModal01_header">
+          <h3 class="modal-title">選擇課程</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            &times;</button>
+        </div>
+
+        <div class="modal-body" id="confirmModal01_body">
+            <div id="confirmInfo">
+                <h4>12/03 12:00~13:30  Vivian 老師</h4>
+                <div class="row">
+                    <p class="col-6">    拿破崙說過一句著名的話，勇氣如愛情，需要希望來滋養。這段話讓我所有的疑惑頓時豁然開朗。現在，正視有氧瑜珈的問題，是非常非常重要的。因為，陳獨秀曾說過一句意義深遠的話，未嘗無益於人群。希望各位能用心體會這段話。</p>
+                    <img src="image/portrait01.jpg" class="col-6 img-fluid">    
+                </div>
+            </div>
+
+            <div class="modal-footer" id="confirmModal01_footer">
+
+                <button type="button" 
+                        id="prevbtn" 
+                        class="btn btn-outline-warning">
+                        <i class="fas fa-chevron-circle-left"></i> 上一頁
+                    </button>
+
+                    <button type="button" 
+                            id="checkButon" 
+                            data-dismiss="modal"
+                            class="btn btn-outline-warning">
+                            <i class="fas fa-check"></i> 確認預約
+                    </button> 
+
+            </div>
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <script>
+
+        $("#openLoginButton").click(function () {
+          $("#loginModal").modal({backdrop: "static"});
+        })
+      
+        $("#loginButton").click(function () {
+          $("#loginModal").modal("hide");
+        })
+
+        $(".bookbtn").click(function () {
+          $("#bookModal").modal({backdrop: "static"});
+        })
+
+        $(".timebtn01").click(function () {
+          $("#confirmModal01").modal({backdrop: "static"});
+        })
+    
+        $("#prevbtn").click(function () {
+          $("#confirmModal01").modal("hide");
+        })
+      
+      </script>
+</body>
+</html>

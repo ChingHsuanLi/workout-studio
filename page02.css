@@ -1,0 +1,185 @@
+body{
+    overflow: hidden;
+}
+
+/* 這裡是navbar */
+body .navbar{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #8AACC8;
+    width: 100%;
+    height: 80px;
+}
+
+li{
+    font-size: 22px;
+}
+
+#logoIcon{
+    margin-top: -7px;  
+}
+
+#openLoginButton{
+    margin-top: -10px;
+}
+
+li a{
+    color: #4B4D4E;
+}
+
+li a:hover{
+    color: #072E48;
+    text-decoration: none;
+}
+
+/* 這裏是登入按鈕 */
+
+.modal-content .modal-header{
+    background-color: #F2D37F;
+}
+
+.modal-content h4{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-content .form-group{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-footer{
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.modal-footer p{
+    padding: 0px;
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B4D4E
+}
+
+/* 這裡是card */
+
+#cardContainer{
+margin-top: 50px;
+margin-left: 140px ;
+}
+
+#card01, #card02, #card03{
+    background-color: #072E48;
+    margin: 30px;
+    padding: 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+#cardIMG{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+#cardBody{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F2D37F;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#cardFoot{
+    margin-left: 250px;
+    margin-bottom: 15px;
+}
+
+#iconBG{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    padding-top: 13px;
+    border-radius: 25px; 
+}
+
+#carouselExampleCaptions{
+    height: 650px;
+    margin-top: 50px;
+    margin-left: -10px;
+}
+
+ol.carousel-indicators li.active {
+  background-color: black;
+}
+
+ol.carousel-indicators li{
+    background-color: black;
+}
+
+/* 這裏是bookmodal */
+
+#bookModal #bookModal_header{
+    background-color: #F2D37F;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+#bookModal h3{
+    font-size: 40px;
+    color: #4B4D4E;
+}
+
+#bookModal #bookModal_body button{
+    font-size: 26px;
+    border: 6px solid #F2D37F;
+    margin: 10px;
+    border-radius: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    color: #4B4D4E;
+}
+
+/* 這裏是confirm modal */
+
+#confirmModal01 #confirmModal01_header{
+    background-color: #F2D37F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#confirmModal01 h3{
+    font-size: 40px;
+    color:#4B4D4E ;
+}
+
+#confirmModal01 #confirmInfo{
+    background-color:#F2D37F ;
+    border: 6px solid #F2D37F;
+    border-radius: 20px;
+}
+
+#confirmInfo h4{
+    font-size: 30px;
+    margin: 20px;
+    color: #4B4D4E;
+}
+
+#confirmInfo p{
+    font-size: 26px;
+    color: #4B4D4E;
+    padding: 60px;
+}
+
+#confirmInfo img{
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page03.css">
+    <link rel="stylesheet" href="setup/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="setup/jquery.min.js"></script>
+    <script src="setup/popper.min.js"></script>    
+    <script src="setup/bootstrap.min.js" ></script>
+    
+</head>
+<body style="background-color: #DEDED9;">
+
+    <nav>
+        <ul class="navbar row shadow">
+            <li class="col-7" id="logoIcon"><a href="index.html"><img src="image/workoutLogo01.pdf"></a></li>
+            <li id="home" class="col-1"><a href="index.html">Home</a></li>
+            <li id="tutorial" class="col-1"><a href="page02.html">Tutorial</a></li>
+            <li id="about" class="col-1"><a href="page03.html">About</a></li>
+            <li id="location" class="col-1"><a href="page04.html">Location</a></li>
+            <li class=" col-1">
+                <button type="button" 
+                    id="openLoginButton"
+                    class="btn btn-outline-dark" >
+                    登入<i class="fas fa-users"></i>
+                </button>
+               
+            </li>
+        </ul>
+    </nav>
+    <!-- 這裏是modal -->
+    <div class="container">
+        <div class="modal fade " id="loginModal">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+            
+              <div class="modal-header shadow">
+                <h4 class="modal-title">登入</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <div class="modal-body">
+    
+                <div class="form-group">
+                  <label for="userNameTextBox">
+                      <i class="fa fa-user"></i> 帳號:
+                  </label>
+                  <input type="text" 
+                      class="form-control form-control-md"
+                      id="userNameTextBox" 
+                      placeholder="輸入帳號或E-mail" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="userNameTextBox">
+                        <i class="fa fa-lock"></i> 密碼:
+                    </label>
+                    <input type="password" 
+                        class="form-control"
+                        id="passwordTextBox" 
+                        placeholder="請在此輸入密碼" />
+                </div>
+            
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> 記住我(下次自動登入)
+                    </label>
+                </div>
+            
+                <div class="float-right">
+                    <button type="button" 
+                            id="loginButton" 
+                            class="btn btn-outline-success">
+                            <i class="fa fa-check"></i> 登入
+                    </button>
+                    <button type="button" 
+                            id="cancelButton" 
+                            data-dismiss="modal"
+                            class="btn btn-outline-secondary">
+                            <i class="fa fa-remove"></i> 取消
+                    </button> 
+                </div>          
+                
+              </div>
+              
+              <div class="modal-footer">
+                <p>
+                    還不是會員嗎? <a href="#">加入我們</a> | 
+                    <a href="#">忘記密碼?</a>
+                </p> 
+                
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+    
+    
+    </div>
+
+
+
+
+    <img src="image/page03dot.png" id="page03dot">
+    <img src="image/page03IMG.png" id="page03IMG" >
+    <pre>        若能夠欣賞到運動的美
+相信我們一定會對運動改觀</pre>
+    
+    
+
+
+    
+
+
+
+
+
+
+<script>
+
+        $("#openLoginButton").click(function () {
+          $("#loginModal").modal({backdrop: "static"});
+        })
+      
+        $("#loginButton").click(function () {
+          $("#loginModal").modal("hide");
+        })
+      
+      </script>
+</body>
+</html>
